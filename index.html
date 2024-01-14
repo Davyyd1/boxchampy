@@ -1,23 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
 
     <title>BoxChampy &mdash; App</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <header class="header">
-            <div class="header__nav">
-                <div class="header__nav-logo">
-                    <img src="img/Logo icon.svg" alt="Logo icon">
-                    <h3 class="header__nav-text">BOXCHAMPY</h3>
-                </div>
-            </div>
-        </header>
+      <header class="header">
+        <div class="header__container">
+          <svg class="header__logo">
+            <use xlink:href="img/sprite.svg#icon-boxing-glove"></use>
+          </svg>
+          <p class="header__text">BOXCHAMPY</p>
+
+          <nav class="user-nav">
+            <ul class="nav">
+              <li class="nav__item">
+                <a href="#" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Locations</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Contact</a>
+              </li>
+              <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+              <li class="nav__item">
+                <a href="#" class="btn nav__link">Sign up</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <p class="header__b-text">
+          Fight like a <br /><span class="header__b-text-champ"> champion</span>
+        </p>
+      </header>
     </div>
-</body>
+
+    <section class="main">main</section>
+    <footer class="footer">footer</footer>
+  </body>
 </html>

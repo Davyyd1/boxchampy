@@ -1,11 +1,115 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 html {
+  box-sizing: border-box;
   font-size: 62.5%;
+  display: grid;
+}
+
+.heading-1 {
+  color: #fff;
+  font-size: 6rem;
+  border: 2px solid red;
+  height: max-content;
+}
+
+.header {
+  background-image: url("../img/boyfight.jpg");
+  background-size: cover;
+  background-position: top right -20rem;
+  background-repeat: repeat;
+  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
+  height: 100vh;
+  padding: 2rem;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 0.45fr 2fr;
+}
+.header__b-text {
+  height: max-content;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  justify-self: start;
+  color: #fff;
+  font-weight: bold;
+  font-size: 9rem;
+  margin-left: 1.5rem;
+  text-transform: uppercase;
+}
+.header__b-text-champ {
+  color: red;
+}
+.header__container {
+  display: flex;
+  justify-content: start;
+  height: 5rem;
+  width: 80%;
+  grid-column: 2/3;
+}
+.header__logo {
+  display: flex;
+  height: 100%;
+  width: 6rem;
+  fill: red;
+}
+.header__logo svg {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+.header__text {
+  width: max-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.user-nav {
+  margin-left: auto;
+  width: 40%;
+}
+
+.nav {
+  display: flex;
+  height: 100%;
+  list-style-type: none;
+}
+.nav__link:visited, .nav__link:link {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.nav__item {
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+.btn {
+  background-color: red;
+  color: #fff;
+}
+
+.main {
+  background-color: orangered;
+}
+
+.footer {
+  background-color: orange;
 }
 
 /*# sourceMappingURL=style.css.map */
