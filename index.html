@@ -7,6 +7,13 @@
       href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-Gr6xkFWvnF1DdRqMXXprM1veeZzMjwULtrlco0MzueC2R4rhwLSTK+DvKNTu7+4y2n5F6ax+iGWi4h2E31jOvw=="
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
 
     <title>BoxChampy &mdash; App</title>
@@ -20,31 +27,68 @@
           </svg>
           <p class="header__text">BOXCHAMPY</p>
 
-          <nav class="user-nav">
-            <ul class="nav">
-              <li class="nav__item">
-                <a href="#" class="nav__link">Home</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Locations</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Contact</a>
-              </li>
-              <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-              <li class="nav__item">
-                <a href="#" class="btn nav__link">Sign up</a>
-              </li>
-            </ul>
-          </nav>
+          <ul class="nav">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Locations</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Contact</a>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item">
+              <a href="#" class="btn nav__link">Sign up</a>
+            </li>
+          </ul>
         </div>
         <p class="header__b-text">
-          Fight like a <br /><span class="header__b-text-champ"> champion</span>
+          Fight like a <br /><span class="red-text"> champion</span>
         </p>
       </header>
     </div>
-
-    <section class="main">main</section>
-    <footer class="footer">footer</footer>
+    <main class="story">
+      <div class="story__wrapper">
+        <section class="story__container">
+          <img src="img/girlfight.jpg" alt="Girl Fight" class="story__img" />
+          <div class="story__text">
+            <h3 class="story__heading">How we got started in this business</h3>
+            <p class="story__paragraph">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non,
+              iure eligendi optio laboriosam modi alias tempore reprehenderit
+              dicta, accusantium perspiciatis enim quam consequatur atque nisi
+              corrupti. Iure tempore eum adipisci!
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__container">
+          Ready for your&nbsp;
+          <p class="red-text">next&nbsp;</p>
+          lesson?
+        </div>
+        <div class="footer__social">
+          <svg class="footer__social--facebook">
+            <use xlink:href="img/sprite.svg#icon-facebook2"></use>
+          </svg>
+          <svg class="footer__social--github">
+            <use xlink:href="img/sprite.svg#icon-github"></use>
+          </svg>
+          <svg class="footer__social--instagram">
+            <use xlink:href="img/sprite.svg#icon-instagram"></use>
+          </svg>
+          <svg class="footer__social--users">
+            <use xlink:href="img/sprite.svg#icon-users"></use>
+          </svg>
+          <svg class="footer__social--youtube">
+            <use xlink:href="img/sprite.svg#icon-youtube2"></use>
+          </svg>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

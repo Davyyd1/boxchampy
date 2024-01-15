@@ -1,3 +1,84 @@
-.footer {
-    background-color: orange;
+.footer{
+    background-color: black;
+    color: #fff;
+    height: 40vh;
+    clip-path: polygon(0 40%, 100% 0%, 100% 100%, 0 100%);  
+    display: flex;
+    justify-content: center;
+
+    &__wrapper {
+        font-size: 2.5rem;
+        height: 100%;
+        width: 80vw;
+        display: flex;
+        align-items: center;
+    }
+
+    &__container {
+        display: flex;
+        margin-top: 5rem;
+        padding: 3rem;
+        font-size: 5rem;
+    }
+
+    &__social {
+        display: flex;
+        width: 50%;
+        margin-top: 5rem;
+        padding: 3rem;
+        height: 10rem;
+        align-items: center;
+        justify-content: center;
+        
+        &--facebook {
+            fill: blue;
+            width: 10rem;
+            height: 10rem;
+            transition: all .2s;
+        }
+        &--facebook:hover {
+            transform: translateY(-5px);
+        }
+
+        &--github {
+            transition: all .2s;
+            fill: white;
+            width: 10rem;
+            height: 10rem;
+        }
+        &--github:hover {
+            transform: translateY(-5px);
+        }
+        &--youtube {
+            transition: all .2s;
+            fill: red;
+            width: 10rem;
+            height: 10rem;
+        }
+        &--youtube:hover {
+            transform: translateY(-5px);
+        }
+        &--instagram {
+            transition: all .2s;
+            fill: purple;
+            width: 10rem;
+            height: 10rem;
+        }
+        &--instagram:hover {
+            transform: translateY(-5px);
+        }
+        &--users {
+            transition: all .2s;
+            fill: white;
+            width: 10rem;
+            height: 10rem;
+        }
+
+        &--users:hover {
+            transform: translateY(-5px);
+        }
+    }
+
+    
+    
 }

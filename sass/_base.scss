@@ -1,3 +1,11 @@
+
+$color-grey: #E7E8E8;
+$color-red: #E83538;
+
+
+$bp-large: 75em; // 1200px
+// $bp-medium: 
+
 *,
 *::before,
 *::after {
@@ -10,6 +18,10 @@ html {
     box-sizing: border-box;
     font-size: 62.5%; // 1 rem = 10px;
     display: grid;
+
+    @media only screen and (max-width:$bp-large){
+        font-size: 37.5%;
+    }
 }
 
 body {
@@ -17,4 +29,16 @@ body {
 }
 
 .container {
+    background-image: url("../img/boyfight.jpg"); 
+    background-size: cover;
+    background-position: top right -20rem;
+    background-repeat: repeat;
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);  
+    display: flex;
+    justify-content: center;
+    max-width: 100vw;
+}
+
+.red-text{
+    color: $color-red;
 }
