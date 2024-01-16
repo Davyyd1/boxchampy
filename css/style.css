@@ -16,16 +16,31 @@ html {
     font-size: 43.75%;
   }
 }
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 28.125%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 21.875%;
+  }
+}
 
 .container {
   background-image: url("../img/boyfight.jpg");
   background-size: cover;
   background-position: top right -20rem;
   background-repeat: repeat;
-  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
   display: flex;
   justify-content: center;
   max-width: 100vw;
+}
+@media only screen and (max-width: 56.25em) {
+  .container {
+    background-position: center;
+  }
 }
 
 .red-text {
