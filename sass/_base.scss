@@ -20,7 +20,7 @@ html {
     display: grid;
 
     @media only screen and (max-width:$bp-large){
-        font-size: 37.5%;
+        font-size: 43.75%; // 1rem = 7 px
     }
 }
 

@@ -19,6 +19,11 @@
         margin-top: 5rem;
         padding: 3rem;
         font-size: 5rem;
+        flex-wrap: wrap;
+
+        @media only screen and (max-width:$bp-large){
+            // font-size: 4rem;
+        }
     }
 
     &__social {
