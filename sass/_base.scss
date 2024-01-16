@@ -45,6 +45,7 @@ body {
     display: flex;
     justify-content: center;
     max-width: 100vw;
+    text-transform: uppercase;
 
     @media only screen and (max-width: $bp-medium) {
         background-position: center;
@@ -54,4 +55,5 @@ body {
 
 .red-text{
     color: $color-red;
+    font-weight: 600;
 }
